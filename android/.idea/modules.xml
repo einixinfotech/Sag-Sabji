@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/768883613/android.path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/768883613/android.path_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1828713605/android.permission_handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1828713605/android.permission_handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-384647200/android.razorpay_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/-384647200/android.razorpay_flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1730978209/android.share_plus.iml" filepath="$PROJECT_DIR$/.idea/modules/1730978209/android.share_plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1102297850/android.shared_preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/-1102297850/android.shared_preferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-892378834/android.sqflite.iml" filepath="$PROJECT_DIR$/.idea/modules/-892378834/android.sqflite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1776667737/android.upi_pay.iml" filepath="$PROJECT_DIR$/.idea/modules/-1776667737/android.upi_pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1504491935/android.url_launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/1504491935/android.url_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1726723247/android.webview_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/1726723247/android.webview_flutter.iml" />
+    </modules>
+  </component>
+</project>

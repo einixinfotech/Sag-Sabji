@@ -48,6 +48,17 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
   @override
   void initState() {
     super.initState();
+    // bool isPopupVisible = true; // dynamic value by API
+    // bool isDissmiss = false; // for navigating to home Scrreen or not
+    // if (isPopupVisible) {
+    //   showPopup(isDissmiss, "The App is under maintenance",
+    //       "we will get back shortly");
+    // }
+    // if (isDissmiss) {
+    //   getCredentials().catchError((onError) {
+    //     print("getCredentials: $onError");
+    //   });
+    // }
     getCredentials().catchError((onError) {
       print("getCredentials: $onError");
     });
@@ -141,5 +152,37 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
     sharedPreferences.setString(Common.mobileKey, "");
     Navigator.pushAndRemoveUntil(context,
         MaterialPageRoute(builder: (context) => WelcomeUI()), (route) => false);
+  }
+
+  void showPopup(bool isDismissible, String title, String body) {
+    Future.delayed(Duration.zero, () {
+      showDialog(
+        barrierDismissible: isDismissible,
+        context: context,
+        builder: (context) {
+          return StatefulBuilder(
+            builder: (context, setPopupState) {
+              return AlertDialog(
+                title: Text(title),
+                content: SingleChildScrollView(
+                  child: ListBody(
+                    children: <Widget>[Text(body)],
+                  ),
+                ),
+                actions: <Widget>[
+                  TextButton(
+                    child:
+                        Text("OK", style: TextStyle(color: Color(0xffff0303))),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        },
+      );
+    });
   }
 }
